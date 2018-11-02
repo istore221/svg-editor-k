@@ -3,7 +3,7 @@ const webpack = require('webpack'),
       HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './index.js',
+  entry: './index.ts',
   output: {
     path: __dirname + '/dist',
     publicPath: '/',
@@ -53,6 +53,11 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['./dist']),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      SVG: 'svg.js'
+    }),
     new HtmlWebpackPlugin({
       template: 'index.html'
     })

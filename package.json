@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jquery": "^3.3.22",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-es2015": "^6.24.1",
@@ -29,6 +30,10 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
-    "svg.js": "^2.6.6"
+    "jquery": "^3.3.1",
+    "snapjs": "^1.2.1",
+    "svg.draggable.js": "^2.2.1",
+    "svg.js": "^2.6.6",
+    "svgdom": "0.0.15"
   }
 }
